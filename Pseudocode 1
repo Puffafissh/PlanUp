@@ -1,0 +1,36 @@
+# Input: Available dates + time, Unavailable dates + time
+# Output: Reccomended rendevous date + time 
+
+# Start
+
+# User INPUT Available start to end dates and time, list A = [start date = 'dd/mm', start time = 'hh, min min']
+# User INPUT Unavailable start to end dates and time, list B = [end date = 'dd/mm', end time = 'hh, min min']]
+
+# available time d.p. = list A [hh + (min min/60)]
+# available date d.p. = list A [nth date of year / 365] 
+
+# list A d.p. = [start date d.p., start time d.p.]
+
+# n1 = no. available time d.p. values 
+
+# If n1 = Odd,
+# Then, median available time d.p. = (n1 + 1)/2
+
+# If n1 = Even,
+# Then, median available time d.p. = ((n1/2) + (n1/2 + 1)) / 2
+
+# number = median available time d.p.
+
+# def closest (number, List A)
+# current = list[0] <- zero length arrays
+
+# for each value in array:
+# if (number - value) < (number - current)
+# then current = val
+# return curr
+
+# if closest = any value in List B
+# then remove option in List A (somehow ifdk) 
+# repeat line 25-30 until closest != any value in List B
+
+# display closest 
